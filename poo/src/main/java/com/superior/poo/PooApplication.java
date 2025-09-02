@@ -17,6 +17,6 @@ public class PooApplication {
 
 @GetMapping("/hello")
 public String hello(){
- return "Hello Word!!!!";
+ return "Hello World!!!";
 }
 }
