@@ -28,5 +28,8 @@ public class ProdutoController {
     }
 
     @GetMapping
-    public ResponseEntity<List<ProdutoModel>> ListarProdutos() {}
+    public ResponseEntity<List<ProdutoModel>> ListarProdutos() {
+        return ResponseEntity.status(
+                HttpStatus.OK).body(produtoRepository.findAll());
+    }
 }
