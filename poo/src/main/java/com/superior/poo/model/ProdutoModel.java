@@ -14,5 +14,5 @@ public class ProdutoModel {
     @Column(name = "VLPRODUTO")
     private double vlProduto;
     @Column(name = "FLATIVO")
-    private String flativo;
+    private String flAtivo;
 }
