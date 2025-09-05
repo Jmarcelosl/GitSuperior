@@ -7,7 +7,8 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Value;
 
 public record ProdutoDto(
-    @NotBlank(message = "Não é possivel cadastrar o produto sem nome.") String nmProduto,
+    @NotBlank(message = "Não é possivel cadastrar o produto sem nome.")
+    String nmProduto,
     String dsProduto,
     @NotNull(message = "Não é possível inserir o produto com o campo vazio.")
     @DecimalMin(value = "0.01",
