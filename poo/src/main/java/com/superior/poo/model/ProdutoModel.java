@@ -1,8 +1,15 @@
 package com.superior.poo.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @Entity
+@Table(name = "TBPRODUTO")
 public class ProdutoModel {
     @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "CDPRODUTO")
