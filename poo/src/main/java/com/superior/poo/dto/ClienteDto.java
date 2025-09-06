@@ -11,8 +11,13 @@ public record ClienteDto(
         @DecimalMin(value = "0.01",
                 message = "Não é possivel cadastrar o cliente com altura abaixo de 0,01.")
         double mtAltura,
-        @NotNull(message = "Não é possível inserir o produto com a flag vazia.")
-        @NotBlank(message = "Não é possivel cadastrar o produto com a flag em branco.")
-        String flAtivo
+        @NotNull(message = "Não é possível inserir o cliente com a flag vazia.")
+        @NotBlank(message = "Não é possivel cadastrar o cliente com a flag em branco.")
+        String flAtivo,
+        @NotNull(message = "Não é possível inserir o telefone com valor vazio.")
+        @NotBlank(message = "Não é possivel cadastrar o telefone em branco.")
+        String nrTelefone,
+        int idadeCliente,
+        String nmRua
 ) {
 }

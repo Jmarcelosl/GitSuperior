@@ -10,6 +10,13 @@ public record FuncionarioDto(
         String nmFuncionario,
         @NotNull(message = "Não é possível inserir o funcionario com a flag vazia.")
         @NotBlank(message = "Não é possivel cadastrar o funcionario com a flag em branco.")
-        String flAtivo
-) {
-}
+        String flAtivo,
+        @NotNull(message = "Não é possível inserir o telefone com valor vazia.")
+        @NotBlank(message = "Não é possivel cadastrar o telefone em branco.")
+        String nrTelefone,
+        @NotNull(message = "Não é possível inserir o salario com valor vazio.")
+        @NotBlank(message = "Não é possivel cadastrar o salario em branco.")
+        @DecimalMin(value = "0.01",
+                message = "Não é possivel cadastrar o salario com valor abaixo de 0,01.")
+        double vlrSalario
+){}
