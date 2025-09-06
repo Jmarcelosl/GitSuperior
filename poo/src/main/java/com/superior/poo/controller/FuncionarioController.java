@@ -27,6 +27,6 @@ public class FuncionarioController {
     @GetMapping
     public ResponseEntity<List<FuncionarioModel>> ListarFuncionario() {
         return ResponseEntity.status(
-                HttpStatus.OK).body(FuncionarioRepository.findAll());
+                HttpStatus.OK).body(funcionarioRepository.findAll());
     }
 }
