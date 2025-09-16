@@ -19,5 +19,4 @@ public record ClienteDto(
         String nrTelefone,
         int idadeCliente,
         String nmRua
-) {
-}
+) { }
