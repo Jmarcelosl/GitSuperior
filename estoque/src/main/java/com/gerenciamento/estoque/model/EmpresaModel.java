@@ -12,13 +12,20 @@ import lombok.NoArgsConstructor;
 @Table(name = "TBEMPRESA")
 public class EmpresaModel {
     @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "CDEMPRESA",  unique = true, nullable = false)
+    @Column(name = "CDEMPRESA")
     private Integer cdEmpresa;
+    @Column(name = "NMRAZAO", length = 100, nullable = false)
     private String nmRazo;
+    @Column(name = "NMFANTASIA", length = 100)
     private String nmFantasia;
+    @Column(name = "NUCNPJ", length = 20, nullable = false, unique = true)
     private String nuCnpj;
+    @Column(name = "NUTELEFONE", length = 14)
     private String nuTelefone;
+    @Column(name = "DSENDERECO", length = 100)
     private String dsEndereco;
+    @Column(name = "NUENDERECO")
     private String nuEndereco;
+    @Column(name = "FLATIVO", length = 1, nullable = false)
     private String flAtivo;
 }
