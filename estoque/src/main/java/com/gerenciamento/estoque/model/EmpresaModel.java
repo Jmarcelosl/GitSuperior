@@ -15,7 +15,7 @@ public class EmpresaModel {
     @Column(name = "CDEMPRESA")
     private Integer cdEmpresa;
     @Column(name = "NMRAZAO", length = 100, nullable = false)
-    private String nmRazo;
+    private String nmRazao;
     @Column(name = "NMFANTASIA", length = 100)
     private String nmFantasia;
     @Column(name = "NUCNPJ", length = 20, nullable = false, unique = true)
