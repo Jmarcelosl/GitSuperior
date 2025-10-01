@@ -49,4 +49,7 @@ public class EmpresaService {
             return empresaRepository.save(empresa);
         });
     }
+    public void deletarEmpresa(Integer cdEmpresa){
+        empresaRepository.deleteByCdEmpresa(cdEmpresa);
+    }
 }
