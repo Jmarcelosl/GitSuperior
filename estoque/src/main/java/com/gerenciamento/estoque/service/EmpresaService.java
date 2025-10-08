@@ -23,6 +23,7 @@ public class EmpresaService {
         empresa.setFlAtivo(dto.flAtivo());
         empresa.setDsEndereco(dto.dsEndereco());
         empresa.setNuEndereco(dto.nuEndereco());
+        empresa.setNuTelefone(dto.nuTelefone());
         return empresaRepository.save(empresa);
     }
     public List<EmpresaModel> listarTodas(){
